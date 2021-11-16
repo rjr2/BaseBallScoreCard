@@ -1,6 +1,6 @@
-import { createStore } from 'redux'
-import rootReducer from './reducer'
+import { createStore } from 'redux';
+import reducers from './reducers';
 
-const store = createStore(rootReducer)
+export default createStore(reducers);
 
-export default store
+//Boilerplate store file for Redux.
