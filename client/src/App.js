@@ -4,6 +4,13 @@ import { ApolloClient, inMemoryCache, ApolloProvider, createHttpLink, InMemoryCa
 import { setContext } from '@apollo/client/link/context';
 import { Provider } from "react-redux";
 
+import store from '.utils/store';
+import Nav from './components/Nav';
+import Home from './pages/Home';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
+import Portal from './pages/Portal';
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
